@@ -1,0 +1,99 @@
+{% load static %}
+@charset "utf-8";
+/* CSS Document */
+
+.header{
+	width:420px;
+	height:700px;
+	background-color:#49d3ae;
+    opacity: 0.9;
+	padding: 5px 40px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	position:absolute;
+	border-radius:6px;
+	box-sizing: border-box;	
+}
+
+h1{
+    text-align: center;
+	color: #000000;
+	font-family: century gothic;
+	margin:0px; 
+}
+
+.inputbox{
+    border-bottom: 1px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.inputbox input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.inputbox span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.inputbox span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.header input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.header select{
+	height: 25px;
+	border: none;
+	outline: none;
+	background-color: #4a842a;
+	color:white;
+	border-radius:20px;
+}
+
+.header input[type="submit"]{
+	height: 40px;
+	background-color: #8e7650;
+	outline: none;
+	border: none;
+	color:white;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius:20px;
+}
+
+.header input[type="submit"]:hover{
+	background-color:#619a2a;
+	color: aquamarine;
+}

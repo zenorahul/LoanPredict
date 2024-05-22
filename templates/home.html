@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body
+        {
+        background:url({% static 'images/bkg4.jpg' %});
+        background-repeat: no-repeat;
+        background-size: 1600px 900px,cover;
+        }
+    </style>
+    <title>LoanPredict.Home</title>
+    <link href="{% static 'css/hmcss.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}" charset="utf-8"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Loan Prediction</h1>
+        <form method="get" action="login" style="...">
+            <h5>Already a user? <button type="submit">Login</button></h5>
+        </form>
+        <form method="get" action="register" style="...">
+            <h5>Create new account? <button type="submit">Register</button></h5>
+        </form>
+    </div>
+    <br>
+    <div class="content">
+        <h5>Why Loan?</h5><br>
+        <p>Here's how the loan process works. When someone needs money, they apply for a loan from a bank, corporation, government, or other entity.
+            The borrower may be required to provide specific details such as the reason for the loan, their financial history, Social Security Number (SSN), and other information.
+            The lender reviews the information including a person's debt-to-income (DTI) ratio to see if the loan can be paid back. Based on the applicant's creditworthiness, the lender either denies or approves the application.
+            The lender must provide a reason should the loan application be denied. If the application is approved, both parties sign a contract that outlines the details of the agreement.
+            The lender advances the proceeds of the loan, after which the borrower must repay the amount including any additional charges such as interest.<br><br>
+            This is a webpage where you can predict whether you are eligible for taking loans based on your income.<br><br> Give a try!</p>
+    </div>
+</body>
+
+<footer>
+    <h6>TechCiti Project By Rahul Jagannath</h6>
+</footer>
+</html>

@@ -1,0 +1,119 @@
+{% load static %}
+@charset "utf-8";
+/* CSS Document */
+
+.header{
+	width:420px;
+	height:300px;
+	background-color:#49d3ae;
+	padding: 30px 40px;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	position:absolute;
+	opacity: 4;
+	border-radius:10px;
+	box-sizing: border-box;	
+}
+.logo{
+	width:100px;
+	height:100px;
+	top:-50px;
+	left:160px;
+	border-radius:50px;
+	position: absolute;
+}
+
+h1{
+    text-align: center;
+	color: white;
+	font-family: century gothic;
+	margin:0px; 
+}
+
+.txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.txtb input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.txtb span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.header input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+.header select{
+	height: 25px;
+	border: none;
+	outline: none;
+	background-color: #4a842a;
+	color:white;
+	border-radius:20px;
+}
+
+.header input[type="Submit"]{
+	height: 40px;
+	background-color: #437217;
+	outline: none;
+	border: none;
+	color:white;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius:20px;
+}
+
+.header a{
+	color:white;
+	cursor: pointer;
+}
+
+.header input[type="Submit"]:hover{
+	background-color:#619a2a;
+	color: aquamarine;
+}
+
+.footer{
+	background-color:#397115; 
+	padding: 10px 100px;
+	padding: 10px 100px;
+	opacity: .5;
+}
